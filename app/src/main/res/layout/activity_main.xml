@@ -7,58 +7,75 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
+    android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Android Pizza Shop"
-        android:textSize="32sp"
-        android:textColor="#ff0000"
-        android:textAlignment="center"/>
+        android:textSize="36sp"
+        android:textColor="#FF6347"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:layout_margin="8dp"/>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/pizza" />
+        android:src="@drawable/pizza"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Choose your pizza size"
-        android:textColor="#06604B"/>
+        android:textColor="#000000 "
+        android:textStyle="bold"/>
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <RadioButton
             android:id="@+id/smallRadioBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Small (RM5)" />
+            android:text="Small (RM5)"
+            android:padding="0dp"
+            android:layout_margin="0dp"/>
 
         <RadioButton
             android:id="@+id/medRadioBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Medium (RM7)" />
+            android:text="Medium (RM7)"
+            android:padding="0dp"
+            android:layout_margin="0dp"/>
 
         <RadioButton
             android:id="@+id/largeRadioBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Large (RM9)" />
-
-
+            android:text="Large (RM9)"
+            android:padding="0dp"
+            android:layout_margin="0dp"/>
+    </RadioGroup>
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Select Your Toppings" />
+            android:text="Select Your Toppings"
+            android:textStyle="bold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -99,7 +116,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Your Total is" />
-    </RadioGroup>
 
 
 </LinearLayout>
